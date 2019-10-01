@@ -23,6 +23,8 @@ button.on("click", () => {
   d3.event.preventDefault();
   var inputDate = input1.property("value").trim();
   var inputCity = input2.property("value").toLowerCase().trim();
+// LowerCase https://www.w3schools.com/jsref/jsref_tolowercase.asp
+
   // Filters
   var filterDate = data.filter(data => data.datetime === inputDate);
   console.log(filterDate)
